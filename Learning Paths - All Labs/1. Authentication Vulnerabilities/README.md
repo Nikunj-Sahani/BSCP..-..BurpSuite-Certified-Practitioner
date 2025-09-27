@@ -5,7 +5,7 @@
 ## 📖 What is Authentication?
 Authentication is the process of **verifying the identity of a user or client**.  
 
-## 🧩 Types of Authentication
+### 🧩 Types of Authentication
 
 1. **Something You Know** *(Knowledge Factor)*  
    - User have some Information (Example: Password, PIN, or answer to a security question.)  
@@ -15,8 +15,6 @@ Authentication is the process of **verifying the identity of a user or client**.
 
 3. **Something You Are (or Do)** *(Inherence Factor)*  
    - User Authentication (Example: Biometrics (fingerprint, face scan, iris) or behavior patterns.)
-   
----
 
 <h1 align="center">🔓 Authorization 🔓 (AuthZ)</h1>
 
@@ -25,7 +23,7 @@ Authentication is the process of **verifying the identity of a user or client**.
 ## 📖 What is Authorization?
 Authorization is the process of allowing someone to access or **modify a resource.**
 
-## Two Levels of Authorization
+### Two Levels of Authorization
 - Level 1 - Allow access to information only. 
 - Level 2 - Allow access to information and to make certain account changes.
 
@@ -37,4 +35,8 @@ Authorization is the process of allowing someone to access or **modify a resourc
 > - **Authorization = What are you allowed to do?**  - It defines your access rights.
  - 🛡️ Both work together for Secure Access Control 🔐
 
+
+### For Example::
+- Authentication determines someone access a website with the username Carlos123.
+- Once **Carlos123** is authenticated, their permissions determine what they are **Authorized** to do. For example, perform deleting another user's account.
 
