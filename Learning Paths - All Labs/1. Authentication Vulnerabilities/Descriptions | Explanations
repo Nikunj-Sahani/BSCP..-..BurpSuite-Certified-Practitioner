@@ -1,0 +1,29 @@
+# 🔐 Authentication
+
+## 📖 What is Authentication?
+Authentication is the process of **verifying the identity of a user or client**.  
+It ensures that the entity requesting access is who they claim to be.
+
+---
+
+## 🧩 Types of Authentication
+
+1. **Something You Know** *(Knowledge Factor)*  
+   - Example: Password, PIN, or answer to a security question.  
+   - Relies on information only the user should know.  
+
+2. **Something You Have** *(Possession Factor)*  
+   - Example: Mobile phone, smart card, or security token.  
+   - Relies on a physical object the user possesses.  
+
+3. **Something You Are (or Do)** *(Inherence Factor)*  
+   - Example: Biometrics (fingerprint, face scan, iris) or behavior patterns.  
+   - Relies on unique physical or behavioral characteristics.  
+
+---
+
+## ✅ Summary
+- Authentication = **Verifying identity**.  
+- Uses **knowledge, possession, and inherence factors**.  
+- Often combined into **Multi-Factor Authentication (MFA)** for stronger security.
+
