@@ -30,13 +30,35 @@ Authorization is the process of allowing someone to access or **modify a resourc
 ## Difference between Authentication and Authorization
 
 ---
-
-> - **Authentication = Who are you?**  - It confirms your identity
-> - **Authorization = What are you allowed to do?**  - It defines your access rights.
+ - **Authentication = Who are you?**  - It confirms your identity
+ - **Authorization = What are you allowed to do?**  - It defines your access rights.
  - 🛡️ Both work together for Secure Access Control 🔐
 
 
 ### For Example::
-- Authentication determines someone access a website with the username Carlos123.
-- Once **Carlos123** is authenticated, their permissions determine what they are **Authorized** to do. For example, perform deleting another user's account.
+> - Authentication determines someone access a website with the username **Carlos123.**
+> - Once **Carlos123** is authenticated, their permissions determine what they are **Authorized** to do. For example, perform deleting another user's account.
+
+## How Authentication vulnerabilities arises?
+
+---
+
+- The authentication mechanisms are **weak** because they fail to protect against **brute-force attacks.**
+- **Logic flaws or poor coding** to be bypassed entirely by an attacker. This is sometimes called **"broken authentication"**
+
+<h1 align="center">⚠️ Vulnerabilities Explanation ⚠️</h1>
+
+---
+
+## Vulnerabilities in password-based login
+- Password-based logins are vulnerable because **weak, reused, or stolen passwords** can be easily guessed, cracked, or phished and Mainly **Brute-Forced.**
+
+## Brute-force attacks
+- A brute-force attack is when an attacker **tries all possible password or key combinations** until the correct one is found.
+
+## Brute-forcing usernames
+- Brute-forcing usernames is systematically trying many **Name/Email guesses to discover which accounts exist.**
+
+## Brute-forcing passwords
+- Automated process of trying many **possible password guesses** until the correct one is found.
 
