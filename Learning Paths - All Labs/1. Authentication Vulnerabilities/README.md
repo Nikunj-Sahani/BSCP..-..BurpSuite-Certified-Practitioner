@@ -62,3 +62,11 @@ Authorization is the process of allowing someone to access or **modify a resourc
 ## Brute-forcing passwords
 - Automated process of trying many **possible password guesses** until the correct one is found.
 
+## Username Enumeration by Brute-Force
+While attempting to brute-force a login page, you should pay particular attention to any differences in:
+
+- **Status codes :** During a brute-force, most HTTP responses are the same; a different status code signals a valid username.
+- **Error messages :** if both username and password are wrong then may be only the password is wrong.
+- **Response times :** If most responses take similar time, but a slower or faster one may indicate a correct username.
+
+
