@@ -2,7 +2,7 @@
 
 ---
 
-# Lab :: Username enumeration via different responses
+# Lab :1: Username enumeration via different responses
 * To solve the lab, *enumerate a valid username, brute-force this user's password,* then access their account page.
 
 ---
@@ -33,7 +33,9 @@
 #### In Intruder , Add payload to username then go to paylaod section , add username list given in the Lab.
 - Add Payload - &1234& (Username)
 - Add username list in Payload section
-> - Username List
+> - You can copy username List from given link below.
+> - [Username List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Username%20List.txt)
+
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/Photos/L1-5.png?raw=true" alt="Sample Image" width="700" height="600"></div>
 
 ---
@@ -49,10 +51,11 @@
 - Capture request in Burp
 - Original request Send to Intruder
 - Payload to password and add Payload list
-> - Password List
-> - 
+> - You can copy Password List from given link below.
+> - [Password List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Password%20List.txt)
 - And Attack, then got real password.
 - Passowrd - letmein
+- 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/Photos/L1-7.png?raw=true" alt="Sample Image" width="700" height="600"></div>
 
 ---
@@ -61,4 +64,11 @@
 > - **Password -** letmein
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/Photos/L1-final.png?raw=true" alt="Sample Image" width="700" height="600"></div>
+
+## After Submit Credential , i got logged in Successfully.
+> - We Got a message after Solving the Lab
+- **Congratulations, You solved the Lab.**
+
+---
+---
 
