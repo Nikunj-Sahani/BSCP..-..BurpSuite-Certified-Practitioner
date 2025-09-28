@@ -1,3 +1,15 @@
+<h2 align="center">👨🏻‍💻Authentication vulnerabilities - Listing of Labs🆔</h2>
+
+> - [Lab-1 { Username enumeration via different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-1-username-enumeration-via-different-responses)
+
+> - [Lab-2 { Username enumeration via subtly different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
+
+> - [Lab-3 {Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
+
+
+
+---
+
 <h1 align="center">👨🏻‍💻Authentication vulnerabilities🆔</h1>
 
 ---
@@ -77,4 +89,6 @@
 * It uses some methodologies to find real username and password.
 
 #### This lab is subtly vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password.
+
+
 
