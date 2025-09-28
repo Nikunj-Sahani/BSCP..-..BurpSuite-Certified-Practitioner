@@ -4,7 +4,7 @@
 
 # Lab :1: Username enumeration via different responses
 * To solve the lab, *enumerate a valid username, brute-force this user's password,* then access their account page.
-
+* It is a simple brute force attack where you can find username and password easily.
 ---
 #### This lab is vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password.
 
@@ -40,7 +40,7 @@
 
 ---
 
-#### After Attack, we got a credential , 
+#### After Attack, we got a credential.
 - username : pi
   
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/Photos/L1-6.png?raw=true" alt="Sample Image" width="700" height="600"></div>
@@ -71,4 +71,10 @@
 
 ---
 ---
+
+# Lab :2: Username enumeration via subtly different responses
+* To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
+* It uses some methodologies to find real username and password.
+
+#### This lab is subtly vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password.
 
