@@ -69,4 +69,12 @@ While attempting to brute-force a login page, you should pay particular attentio
 - **Error messages :** if both username and password are wrong then may be only the password is wrong.
 - **Response times :** If most responses take similar time, but a slower or faster one may indicate a correct username.
 
+> - [Lab-1 {Username enumeration via different responses}](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-1-username-enumeration-via-different-responses)
 
+> - [Lab-2 {Username enumeration via subtly different responses}](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
+
+> - [Lab-3 {Username enumeration via response timing}](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
+
+> - 
+> - 
+> - 
