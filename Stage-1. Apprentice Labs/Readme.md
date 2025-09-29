@@ -42,7 +42,7 @@
 - Add Payload - &1234& (Username)
 - Add username list in Payload section
 > - You can copy username List from given link below.
-> - [Username List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Username%20List.txt)
+> - [Username List from Lab](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Payload%20%26%20Scripts/Username%20List.txt)
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-5.png" alt="Sample Image" width="700" height="600"></div>
 
@@ -60,10 +60,10 @@
 - Original request Send to Intruder
 - Payload to password and add Payload list
 > - You can copy Password List from given link below.
-> - [Password List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Password%20List.txt)
+> - [Password List from Lab](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Payload%20%26%20Scripts/Password%20List.txt)
 - And Attack, then got real password.
 - Passowrd - letmein
-- 
+  
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-7.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
