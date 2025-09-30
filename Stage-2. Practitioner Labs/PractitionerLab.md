@@ -95,6 +95,50 @@
 ---
 ---
 
-
 # Lab : 3 : { Practitioner }
-# Username enumeration via subtly different responses
+# Username enumeration via Response Timing
+- This lab is vulnerable to username enumeration using its response times. 
+
+---
+#### To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
+> - Your credentials: for dummy login 
+> - **Useranme :** wiener
+> - **Password :** peter
+
+- The lab also implements a form of IP-based brute-force protection. However, this can be easily bypassed by manipulating HTTP request headers.
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-3.png" alt="Sample Image" width="700" height="600"></div>
+
+---
+#### Access the Lab for Testing
+- Enter the credential and click to login
+- **Capture the request** in Burp as below
+- Send the original request to **Repeater** Tab
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L3-2.png" alt="Sample Image" width="700" height="600"></div>
+
+---
+#### Check Repeater Tab (Wrong Credential)
+> - Understand How it works
+- When Username is incorrect and password is long (Response time has same like all response)
+- Here credential is wrong (test)
+- Focus on Response Time (193 milis)
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L3-3.png" alt="Sample Image" width="700" height="600"></div>
+
+---
+#### Check Repeater Tab (Correct Username)
+> - Check response timing when username is correct
+- When Username is correct and password is long (Response time is increased)
+- Focus on Response Time (1651 milis)
+> - Means username is correct then it checks the password otherwise not checked.
+- Now for username enumeration, go with IP-based brute-force
+- Add { X-Forwarded-For : 1 } in request for ip based enumeration
+- Send the request from Repeater to Intruder
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L3-4.png" alt="Sample Image" width="700" height="600"></div>
+
+---
+#### Intruder section for Attack
+- 
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L3-5.png" alt="Sample Image" width="700" height="600"></div>
