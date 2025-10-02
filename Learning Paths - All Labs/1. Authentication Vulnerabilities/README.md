@@ -69,12 +69,30 @@ While attempting to brute-force a login page, you should pay particular attentio
 - **Error messages :** if both username and password are wrong then may be only the password is wrong.
 - **Response times :** If most responses take similar time, but a slower or faster one may indicate a correct username.
 
-> - [Lab-1 {Username enumeration via different responses}](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-1-username-enumeration-via-different-responses)
+> - [Lab-1 { Username enumeration via different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-1-username-enumeration-via-different-responses)
 
-> - [Lab-2 {Username enumeration via subtly different responses}](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
+> - [Lab-2 { Username enumeration via subtly different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
 
-> - [Lab-3 {Username enumeration via response timing}](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
+> - [Lab-3 { Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-2-username-enumeration-via-subtly-different-responses)
 
-> - 
-> - 
-> - 
+---
+
+## Flawed brute-force protection
+It is highly likely that a brute-force attack will involve many failed guesses before the attacker successfully compromises an account. 
+
+- The two most common ways of preventing brute-force attacks are:
+> - Locking the account that the remote user is trying to access if they make too many failed login attempts
+> - Blocking the remote user's IP address if they make too many login attempts in quick succession
+
+- This means an attacker would simply have to log in to their own account, every few attempts to prevent this limit from ever being reached to fail.
+- For Example :
+- After 3 incorrect credential ,log in would be blocked.
+> - Means 2 incorrect login can try with brute force.
+- Auto setup for brute Force
+> - 2 credential for brute force and 3rd is correct for log in.
+> - Means it try 2 credential and in 3rd time it got logged in , so it would not be blocked.
+> - It runs the attack weather it find the original credentials.
+
+> - [Lab-4 { Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#broken-brute-force-protection-ip-block)
+
+---
