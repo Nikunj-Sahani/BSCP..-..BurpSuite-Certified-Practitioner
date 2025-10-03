@@ -240,7 +240,8 @@ Here We select both username and password payload in one request.
 - In Payload Section - **Payload 1 for wiener**
 > - Simple List - **Our own Username payload that i made.**
 > - Copy from here and paste it to your simple list.
-> - 
+> - [ Macro Username List ](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Macro_user.txt)
+
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-4d.png" alt="Sample Image"></div>
 
 ---
@@ -250,7 +251,8 @@ Here We select both username and password payload in one request.
 - In Payload Section - **Payload 2 for peter**
 > - Simple List - **Our own Password payload that i made.**
 > - Copy from here and paste it to your simple list.
-> - 
+> - [ Macro Password List ](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Macro_pass.txt)
+
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-5e.png" alt="Sample Image"></div>
 
 ---
