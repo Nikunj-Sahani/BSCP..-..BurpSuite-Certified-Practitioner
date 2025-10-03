@@ -90,7 +90,7 @@
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L2-final.png" alt="Sample Image"></div>
 
-> - We Got a message after Solving the Lab
+> - We got a message after Solving the Lab
 - **Congratulations, You solved the Lab.**
 
 ---
@@ -199,7 +199,7 @@
   
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L3-final.png" alt="Sample Image"></div>
 
-> - We Got a message after Solving the Lab
+> - We got a message after Solving the Lab
 - **Congratulations, You solved the Lab.**
 
 ---
@@ -212,32 +212,75 @@
 ---
 ### To solve the lab, brute-force the victim's password, then log in and access their account page.
 - Advanced users may want to solve this lab by using a macro or the Turbo Intruder extension. However, it is possible to solve the lab without using these advanced features.
-
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-4-a.png" alt="Sample Image"></div>
-
----
-
-
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-2-b.png" alt="Sample Image"></div>
+> - Here we have username , find the password only.
+> - Username : carlos
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-4a.png" alt="Sample Image"></div>
 
 ---
+### Login Interface of Web
+- Here i will login with given credential in the lab.
+> - Username : **wiener**
+> - Password : **peter**
+> - Click Ok for loggin and capture the loggin details in Burp.
 
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-3-c.png" alt="Sample Image"></div>
-
----
-
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-4-d.png" alt="Sample Image"></div>
-
----
-
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-5-e.png" alt="Sample Image"></div>
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-2b.png" alt="Sample Image"></div>
 
 ---
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-6-f.png" alt="Sample Image"></div>
+### Capture the Request in Burp Suite
+- Find the original request in Burp
+- Focus on Username and Password for Original Request
+- Then Send the Original request in **Intruder Tab.**
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-3c.png" alt="Sample Image"></div>
 
 ---
-
-<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-7-g.png" alt="Sample Image"></div>
+### Intruder Tab - Username
+Here We select both username and password payload in one request.
+- Select Attack type : **PitchFork**
+- Select payload position to *username*
+- In Payload Section - **Payload 1 for wiener**
+> - Simple List - **Our own Username payload that i made.**
+> - Copy from here and paste it to your simple list.
+> - 
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-4d.png" alt="Sample Image"></div>
 
 ---
+### Intruder Tab - Password
+- Select Attack type : **PitchFork**
+- Select payload position to *password*
+- In Payload Section - **Payload 2 for peter**
+> - Simple List - **Our own Password payload that i made.**
+> - Copy from here and paste it to your simple list.
+> - 
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-5e.png" alt="Sample Image"></div>
+
+---
+### Intruder Tab - Resource Pool
+- If You did't get option of *Resource pool in Your burp* then **skip this 1st method and go for 2nd method.**
+- Create new resource pool
+- Click for check mark ✅
+> - **Maximum concurrent request : 1**
+> - Done - Now Start the Attack
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-6f.png" alt="Sample Image"></div>
+
+---
+### Attack Initiated 
+- You got a status code of 302 (Real Password).
+> - Password : **123321**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-7g.png" alt="Sample Image"></div>
+
+---
+### LAB Solved
+- Credential for Login
+> - Username : **carlos**
+> - Password : **123321**
+- After submitting , we got logged in successfully.
+  
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-final.png" alt="Sample Image"></div>
+
+> - We got a message after Solving the Lab
+- **Congratulations, You solved the Lab.**
+
+---
+---
