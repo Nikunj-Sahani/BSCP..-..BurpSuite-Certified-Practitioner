@@ -4,7 +4,8 @@
 
 > - [Lab-3 {Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PractitionerLab.md#lab--3---practitioner-)
 
-> - [ Lab-4 { Broken brute-force protection, IP block - (1st METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#broken-brute-force-protection-ip-block)
+> - [ Lab-4.1 { Broken brute-force protection, IP block - (1st METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#broken-brute-force-protection-ip-block)
+
 
 ---
 
@@ -205,7 +206,7 @@
 ---
 ---
 
-# Lab : 4 : { Practitioner }
+# Lab : 4.1 : { Practitioner }
 # Broken brute-force protection, IP block (1st METHOD)
 - This lab is vulnerable due to a logic flaw in its password brute-force protection. 
 
@@ -286,3 +287,31 @@ Here We select both username and password payload in one request.
 
 ---
 ---
+
+# Lab : 4.2 : { Practitioner }
+# Broken brute-force protection, IP block (2nd METHOD)
+- This lab is vulnerable due to a logic flaw in its password brute-force protection. 
+
+---
+### To solve the lab, brute-force the victim's password, then log in and access their account page.
+- Advanced users may want to solve this lab by using a macro or the Turbo Intruder extension. However, it is possible to solve the lab without using these advanced features.
+> - Here we have username , find the password only.
+> - Username : carlos
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-4-a.png" alt="Sample Image"></div>
+
+---
+### Login Interface of Web
+- Here i will login with given credential in the lab.
+> - Username : **wiener**
+> - Password : **peter**
+> - Click Ok for loggin and capture the loggin details in Burp.
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-2-b.png" alt="Sample Image"></div>
+
+---
+### Capture the Request in Burp Suite
+- Find the original request in Burp
+- Focus on Username and Password for Original Request
+- Then Send the Original request in **Intruder Tab.**
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-3-c.png" alt="Sample Image"></div>
+
