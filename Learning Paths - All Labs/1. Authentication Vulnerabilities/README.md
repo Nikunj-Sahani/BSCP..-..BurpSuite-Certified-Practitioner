@@ -93,6 +93,28 @@ It is highly likely that a brute-force attack will involve many failed guesses b
 > - Means it try 2 credential and in 3rd time it got logged in , so it would not be blocked.
 > - It runs the attack weather it find the original credentials.
 
-> - [Lab-4 { Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#broken-brute-force-protection-ip-block)
+> - [ Lab - 4.1 { Broken brute-force protection, IP block - (1st METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--41---practitioner-)
+
+> - [ Lab - 4.2 { Broken brute-force protection, IP block - (2nd METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--42---practitioner-)
 
 ---
+## Account Locking
+websites try to **prevent brute-forcing** is to lock the account if certain *suspicious criteria happened,* usually a set number of failed login attempts. 
+Just as with normal login errors, responses from the **server indicating that an account is locked** can also help an attacker to enumerate usernames.
+
+#### Account Locking understand in Easy Steps
+- **What it is :** Account locking temporarily (or permanently) stops a user from logging in after suspicious activity.
+- **Typical trigger :** A set number of failed login attempts (e.g., 5 wrong passwords) or unusual behavior.
+- **Immediate effect :** The server rejects further login attempts for that username (shows “locked” or blocks responses).
+- **Why sites do it :** Prevents automated brute-force attacks that try many passwords.
+
+**Problems it can cause**
+
+ > - **Username enumeration :** A “locked” message reveals the username exists.
+ >  - **Denial-of-service :** Attackers can purposely lock many accounts.
+
+**Common mitigations**
+- Show generic error messages (“invalid credentials”) instead of “locked”.
+- Use progressive delays or CAPTCHA after failures (instead of hard lock).
+- Rate-limit by IP + account, combine with MFA and logging.
+- Allow safe unlock methods (email link, timed cooldown, admin review).
