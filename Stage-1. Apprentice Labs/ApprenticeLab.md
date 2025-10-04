@@ -2,7 +2,6 @@
 
 > - [Lab-1 { Username enumeration via different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-1-username-enumeration-via-different-responses)
 
-
 ---
 
 <h1 align="center">👨🏻‍💻Authentication vulnerabilities🆔</h1>
@@ -13,6 +12,8 @@
 # Username enumeration via different responses
 * To solve the lab, *enumerate a valid username, brute-force this user's password,* then access their account page.
 * It is a simple brute force attack where you can find username and password easily.
+> - [ Portswigger Lab { Username enumeration via different responses }](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses)
+
 ---
 #### This lab is vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password.
 
