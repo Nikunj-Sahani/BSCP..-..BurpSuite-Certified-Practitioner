@@ -69,7 +69,7 @@
 > - **Password :** 1234
 
 - Now Clear all payload then Select payload on **$1234$** as password
-> - Copy the Username from the list given in Lab (Candidate username)
+> - Copy the Password from the list given in Lab (Candidate password)
 > - [Password List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Password%20List.txt)
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L2-7.png" alt="Sample Image"></div>
@@ -83,7 +83,7 @@
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L2-8.png" alt="Sample Image"></div>
 
 ---
-### Logged in Successfully
+### 🎇 LAB Solved 🥳
 > - **Username -** alterwind
 > - **Password -** dragon
 
@@ -193,7 +193,7 @@
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L3-9.png" alt="Sample Image"></div>
 
 ---
-### Solved the LAB now
+### 🎇 LAB Solved 🥳
 > - **Username -** access
 > - **Password -** nicole
 - After Submit Credential , i got logged in Successfully.
@@ -274,7 +274,7 @@ Here We select both username and password payload in one request.
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-7g.png" alt="Sample Image"></div>
 
 ---
-### LAB Solved
+### 🎇 LAB Solved 🥳
 - Credential for Login
 > - Username : **carlos**
 > - Password : **123321**
@@ -300,18 +300,91 @@ Here We select both username and password payload in one request.
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-4-a.png" alt="Sample Image"></div>
 
 ---
-### Login Interface of Web
-- Here i will login with given credential in the lab.
+### Capture the Request in Burp Suite
+- Here i will login with given credential.
 > - Username : **wiener**
 > - Password : **peter**
-> - Click Ok for loggin and capture the loggin details in Burp.
-
+> - Click Ok for login and capture the login details in Burp.
+> - Then Send the Original request in **Intruder Tab.**
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-2-b.png" alt="Sample Image"></div>
 
 ---
-### Capture the Request in Burp Suite
-- Find the original request in Burp
-- Focus on Username and Password for Original Request
-- Then Send the Original request in **Intruder Tab.**
+### Send in Intruder Tab
+- In intruder tab , Go on Position.
+> - **Change the username wiener to carlos.**
+- Select payload position to password $1234$.
+- Then Go on Payload in Intruder tab.
+  
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-3-c.png" alt="Sample Image"></div>
+
+---
+### Intruder Tab - Payload
+- Payload of Simple list
+> - Copy the Password from the list given in Lab (Candidate password)
+> - [Password List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Password%20List.txt)
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-4-d.png" alt="Sample Image"></div>
+
+---
+### Project Options - Tab in Burp
+- In Project option ➡️ Go to Session
+- **Session Handling rules** at first ➡️ Click on **Add**
+> - Open a tab ➡️ **Session Handling Rule editor**
+> - Tab ➡️ Details 
+> - **Rule Actions ➡️ Add**  ➡️ **Run a Macro**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-5-e.png" alt="Sample Image"></div>
+
+---
+### Macro Editor - Details Tab
+- Find the original Logged in request.
+> - wiener & peter log details
+- Then click ➡️ Ok ➡️ Ok
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-6-f.png" alt="Sample Image"></div>
+
+---
+### Session Handling Rule Editor - Details Tab
+- After Editing
+- You got a Macro rules in **Rule Actions**
+> - **✅ run macro : Macro 1**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-7-g.png" alt="Sample Image"></div>
+
+---
+### Session Handling Rule Editor - Scope Tab
+- ➡️ URL Scope
+- Tick it ✅ Include All URLs
+- Click Ok to add Rules
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-8-h.png" alt="Sample Image"></div>
+
+---
+### Sessions ➡️ Session Handling Rule
+- After all done it Back to session.
+- Now You can see here **It add a New Rule.**
+> - **✅ Rule 1** : target , Spider , Scanner , Intruder , Repeater.....
+> - Now All Done
+- **Go to Intruder tab & Start the Attack**
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-9-i.png" alt="Sample Image"></div>
+
+---
+### Attack Initiated 
+- You got a status code of 302 (Real Password).
+> - Password : **pass**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-10-j.png" alt="Sample Image"></div>
+
+---
+### 🎇 LAB Solved 🥳
+- Credential for Login
+> - Username : **carlos**
+> - Password : **pass**
+- After submitting , we got logged in successfully.
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L4-finall.png" alt="Sample Image"></div>
+
+> - We got a message after Solving the Lab
+- **Congratulations, You solved the Lab.**
 
