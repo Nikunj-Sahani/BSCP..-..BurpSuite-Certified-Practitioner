@@ -1,10 +1,12 @@
 <h2 align="center">👨🏻‍💻Authentication vulnerabilities - Listing of Labs🆔</h2>
 
-> - [Lab-2 { Username enumeration via subtly different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PractitionerLab.md#lab--2---practitioner-)
+> - [Lab - 2 { Username enumeration via subtly different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PractitionerLab.md#lab--2---practitioner-)
 
-> - [Lab-3 {Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PractitionerLab.md#lab--3---practitioner-)
+> - [Lab - 3 { Username enumeration via response timing }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PractitionerLab.md#lab--3---practitioner-)
 
-> - [ Lab-4.1 { Broken brute-force protection, IP block - (1st METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#broken-brute-force-protection-ip-block)
+> - [ Lab - 4.1 { Broken brute-force protection, IP block - (1st METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--41---practitioner-)
+
+> - [ Lab - 4.2 { Broken brute-force protection, IP block - (2nd METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--42---practitioner-)
 
 
 ---
