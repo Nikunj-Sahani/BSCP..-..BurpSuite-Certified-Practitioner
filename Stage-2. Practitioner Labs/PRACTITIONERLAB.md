@@ -24,6 +24,8 @@
 ### This lab is subtly vulnerable to username enumeration and password brute-force attacks. 
  - It has an account with a predictable username and password.
 
+> - [ Portswigger Lab { Username enumeration via subtly different responses }](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-subtly-different-responses)
+
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-2.png" alt="Sample Image"></div>
 
 ---
@@ -102,6 +104,7 @@
 # Lab : 3 : { Practitioner }
 # Username enumeration via Response Timing
 - This lab is vulnerable to username enumeration using its response times. 
+> - [ Portswigger Lab { Username enumeration via Response Timing }](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-response-timing)
 
 ---
 ### To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
@@ -211,6 +214,7 @@
 # Lab : 4.1 : { Practitioner }
 # Broken brute-force protection, IP block (1st METHOD)
 - This lab is vulnerable due to a logic flaw in its password brute-force protection. 
+> - [ Portswigger Lab { Broken brute-force protection, IP block }](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block)
 
 ---
 ### To solve the lab, brute-force the victim's password, then log in and access their account page.
@@ -293,6 +297,7 @@ Here We select both username and password payload in one request.
 # Lab : 4.2 : { Practitioner }
 # Broken brute-force protection, IP block (2nd METHOD)
 - This lab is vulnerable due to a logic flaw in its password brute-force protection. 
+> - [ Portswigger Lab { Broken brute-force protection, IP block }](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block)
 
 ---
 ### To solve the lab, brute-force the victim's password, then log in and access their account page.
