@@ -15,4 +15,4 @@ A Portswigger Certification to learn advanced pen-testing techniques.
 
 > - [ Lab - 4.2 { Broken brute-force protection, IP block - (2nd METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--42---practitioner-) [ Practitioner ]
 
-> - [ Lab - 5 { Username enumeration via account lock }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--5---practitioner-)
+> - [ Lab - 5 { Username enumeration via account lock }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--5---practitioner-) [ Practitioner ]
