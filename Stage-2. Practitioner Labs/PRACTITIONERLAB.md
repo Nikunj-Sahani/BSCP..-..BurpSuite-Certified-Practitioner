@@ -395,3 +395,18 @@ Here We select both username and password payload in one request.
 > - We got a message after Solving the Lab
 - **Congratulations, You solved the Lab.**
 
+---
+---
+
+# Lab : 5 : { Practitioner }
+# Username enumeration via account lock
+This lab is vulnerable to username enumeration. It uses account locking, but this contains a logic flaw. 
+> - [ Portswigger Lab { Username enumeration via account lock }](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-account-lock)
+
+---
+### To solve the lab, enumerate a valid username, brute-force this user's password, then access their account page.
+- This is interface of web i have to solve.
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-5.png" alt="Sample Image"></div>
+
+---
