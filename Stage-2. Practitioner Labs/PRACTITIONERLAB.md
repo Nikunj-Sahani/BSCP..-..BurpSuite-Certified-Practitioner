@@ -433,7 +433,7 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 - Clear all Payload positions
 - Select Payload Position
 > - **Username :** 💲abcd💲
->  **Password :** 1234$$
+> - **Password :** 1234$$
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-4.png" alt="Sample Image"></div>
 
@@ -459,7 +459,7 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 > - When you enter wrong credential continuosly for login, You got a message.
 > - Copy the message - **Invalid username or password**
 - **Go to Grep - Match**
-- Paste the message here.
+- Paste the message in Grep-match box.
 > - Invalid username or password
 - Now Start the attack
 
@@ -468,7 +468,7 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 ---
 ### Attack Initiated - (Username Found)
 - You can't find this by status code, You got a another status of your message.
-- All useranme have Ticked already it is not the original.
+- All username have Ticked already it is not the original.
 - **Original Username have unticked.**
 - **Username :** adam
   
@@ -493,7 +493,7 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 > - When you enter wrong credential continuosly for login, You got a message.
 > - Copy the message - **You have made too many incorrect login attempts. Please try again in 1 minutes(s).**
 - **Go to Grep - Match**
-- Paste the message here.
+- Paste the message in Grep-match box.
 > - 1. You have made too many incorrect login attempts. Please try again in 1 minutes(s)
 > - 2. 1 minute(s)
 - Now Start the attack
