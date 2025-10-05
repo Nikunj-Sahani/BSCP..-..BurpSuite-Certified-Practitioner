@@ -8,6 +8,8 @@
 
 > - [ Lab - 4.2 { Broken brute-force protection, IP block - (2nd METHOD) }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--42---practitioner-)
 
+> - [ Lab - 5 { Username enumeration via account lock }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--5---practitioner-)
+
 
 ---
 
@@ -410,3 +412,117 @@ This lab is vulnerable to username enumeration. It uses account locking, but thi
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-5.png" alt="Sample Image"></div>
 
 ---
+### Access The Lab
+- Try login with wrong credentials.
+> - **Username :** abcd
+> - **Password :** 1234
+- Click for Log in & Capture the request in Burp
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-2.png" alt="Sample Image"></div>
+
+---
+### Request Captured in Burp Suite
+- Find the original Request in Burp
+> - **Send the original Request into Intruder**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-3.png" alt="Sample Image"></div>
+
+---
+### 1. Intruder Tab - Positions (Username Finding)
+- Select Attack Type - **Cluster Bomb**
+- Clear all Payload positions
+- Select Payload Position
+> - **Username :** 💲abcd💲
+>  **Password :** 1234$$
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-4.png" alt="Sample Image"></div>
+
+---
+### Intruder Tab - Payloads (Username Finding)
+- Payload Sets : **1 (Simple Lists)**
+> - Copy the Username from the list given in Lab (Candidate username)
+> - [Username List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Username%20List.txt)
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-5.png" alt="Sample Image"></div>
+
+---
+### Intruder Tab - Payloads (Username Finding)
+- Payload Sets : **2 (Null Payloads)**
+- Payload Options : Null Payloads
+> - Tick it ✅ Generate 5 Payloads
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-5a.png" alt="Sample Image"></div>
+
+---
+### Intruder Tab - Options (Username Finding)
+- Go to web login Page and try *login with wrong credentials*
+> - When you enter wrong credential continuosly for login, You got a message.
+> - Copy the message - **Invalid username or password**
+- **Go to Grep - Match**
+- Paste the message here.
+> - Invalid username or password
+- Now Start the attack
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-6.png" alt="Sample Image"></div>
+
+---
+### Attack Initiated - (Username Found)
+- You can't find this by status code, You got a another status of your message.
+- All useranme have Ticked already it is not the original.
+- **Original Username have unticked.**
+- **Username :** adam
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-7.png" alt="Sample Image"></div>
+
+---
+### 2. Intruder Tab - Positions (Password Finding)
+- Select Attack Type - **Sniper**
+- Clear all Payload positions
+- Select Payload Position on Password only
+> - **Username :** adam (Real username after finding)
+> - **Password :** 💲1234💲
+- Go to Payloads - Simple list
+> - Copy the Password from the list given in Lab (Candidate password)
+> - [Password List from Lab](Stage-1.%20Apprentice%20Labs/Payload%20%26%20Scripts/Password%20List.txt)
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-8.png" alt="Sample Image"></div>
+
+---
+### Intruder Tab - Options (Password Finding)
+- Go to web login Page and try login with *original useranme and wrong password.*
+> - When you enter wrong credential continuosly for login, You got a message.
+> - Copy the message - **You have made too many incorrect login attempts. Please try again in 1 minutes(s).**
+- **Go to Grep - Match**
+- Paste the message here.
+> - 1. You have made too many incorrect login attempts. Please try again in 1 minutes(s)
+> - 2. 1 minute(s)
+- Now Start the attack
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-9.png" alt="Sample Image"></div>
+
+---
+### Attack Initiated - (Password Found)
+- You can't find this by status code, You got a another status of your message.
+- All passwords have Ticked already it is not the original.
+- **Original password have unticked.**
+- **Password :** mustang
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-10.png" alt="Sample Image"></div>
+
+---
+### 🎇 LAB Solved 🥳
+- Credential for Login
+> - Username : **adam**
+> - Password : **mustang**
+- After submitting , we got logged in successfully.
+  
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L5-final.png" alt="Sample Image"></div>
+
+> - We got a message after Solving the Lab
+- **Congratulations, You solved the Lab.**
+
+---
+---
+
+# Lab : 6 : { Practitioner }
+# Coming Soon - Testing
