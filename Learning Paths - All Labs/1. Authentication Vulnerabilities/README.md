@@ -143,4 +143,37 @@ IP can only be unblocked in one of the following ways:
 ## HTTP Basic Authentication
 In HTTP basic authentication, the client receives an authentication token from the server, which is constructed by concatenating the username and password, and encoding it in Base64.
 - This token is stored and managed by the browser, which automatically adds it to the Authorization header
-> - Authorization: Basic base64(username:password)
+- **Authorization: Basic base64(username:password)**
+> - Client sends Authorization: Basic BASE64(username:password).
+> - Server decodes the header, checks credentials, and allows or denies access.
+
+- Implementations of HTTP basic authentication often *don't support brute-force protection*. 
+- HTTP basic authentication is also particularly *vulnerable to session-related exploits, notably CSRF*
+
+### Vulnerabilities in Multi-factor authentication
+Two-factor authentication (2FA) based on *something you know and something you have.*
+- Email or SMS-based MFA can be **intercepted**
+- Attacker tricks sim swapping to transfer victim’s phone number, **intercepting SMS-based codes.**
+  
+### Two-factor authentication Tokens
+A 2FA token is the second proof of identity (after a password) used to confirm a user’s login.
+- **SMS Token** – code sent by text message.
+- **Email Token** – code sent to your email.
+- **TOTP (Time-based One-Time Password)** – 6-digit code from apps like Google Authenticator or Authy.
+
+**How it works (example)**
+
+> - You enter your **username + password.**
+> - The system asks for your **token code.**
+> - You enter or approve it → **server verifies → access granted.**
+
+---
+## Bypassing two-factor authentication
+Some sites mark you as “logged in” right after you enter the password — **before the 2FA code is checked.**
+- **How to test :**
+> - After entering a valid password (but not the code), try visiting a “logged-in only” page directly — **if it loads, 2FA is bypassable.**
+- **Why that’s bad :**
+> - If the session is active after the password step, an **attacker can skip the 2nd factor** and open pages that should be protected.
+
+---
+
