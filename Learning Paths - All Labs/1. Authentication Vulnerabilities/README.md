@@ -138,3 +138,9 @@ IP can only be unblocked in one of the following ways:
 > - **Track requests :** Count each user/IP’s attempts.
 > - **Block or delay :** If they exceed the limit, slow them down or temporarily block access.
 > - **Why it’s used :** Stops brute-force attacks, spam, and abuse.
+
+---
+## HTTP Basic Authentication
+In HTTP basic authentication, the client receives an authentication token from the server, which is constructed by concatenating the username and password, and encoding it in Base64.
+- This token is stored and managed by the browser, which automatically adds it to the Authorization header
+> - Authorization: Basic base64(username:password)
