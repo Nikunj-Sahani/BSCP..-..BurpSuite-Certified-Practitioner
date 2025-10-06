@@ -1,6 +1,10 @@
 # BSCP..-..BurpSuite-Certified-Practitioner
-A Portswigger Certification to learn advanced pen-testing techniques.
+The Burp Suite Certified Practitioner (BSCP) is a practical, hands-on certification designed by **PortSwigger**, the creators of **Burp Suite** 
 
+Passing the exam demonstrates *advanced web security testing skills,* proficiency in Burp Suite Professional.
+- **The ability to identify and exploit different vulnerability types.**
+- **The BSCP certification offers a challenging yet high-value credential for web security professionals.**
+- **It’s ideal for penetration testers, bug bounty hunters, and deep learners in application security.**
 ---
 
 <h2 align="center">👨🏻‍💻Authentication vulnerabilities - Listing of Labs🆔</h2>
