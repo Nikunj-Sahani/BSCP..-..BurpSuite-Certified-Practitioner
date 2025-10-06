@@ -120,3 +120,21 @@ Just as with normal login errors, responses from the **server indicating that an
 - Allow safe unlock methods (email link, timed cooldown, admin review).
 
 > - [ Lab - 5 { Username enumeration via account lock }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/edit/main/Stage-2.%20Practitioner%20Labs/PRACTITIONERLAB.md#lab--5---practitioner-)
+
+---
+## User Rate Limiting
+In this case, making too many login requests within a short period of time causes your IP address to be blocked.
+
+**Example :**
+- After 5 wrong logins → wait 30 seconds before next try.
+
+IP can only be unblocked in one of the following ways:
+> - Automatically after a certain period of time has elapsed
+> - Manually by an administrator
+> - Manually by the user after successfully completing a CAPTCHA
+
+- Simple steps:
+> - **Set a limit :** e.g., max 5 login tries per minute.
+> - **Track requests :** Count each user/IP’s attempts.
+> - **Block or delay :** If they exceed the limit, slow them down or temporarily block access.
+> - **Why it’s used :** Stops brute-force attacks, spam, and abuse.
