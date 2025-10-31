@@ -80,3 +80,81 @@
 
 ---
 ---
+
+# Lab : 6 : { Apprentice }
+# 2FA simple bypass
+* This lab's two-factor authentication can be bypassed.
+* You have already obtained a *valid username and password*, but do not have access to the user's 2FA verification code.
+  
+> - [ Portswigger Lab { 2FA simple bypass }](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-simple-bypass)
+
+---
+#### To solve the lab, access Carlos's account page.
+
+- Your credentials - **wiener : peter**
+- Victim's credentials - *carlos : montoya*
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-6.png" alt="Sample Image"></div>
+
+---
+#### This is our Interface of our Web-Lab where we have to test.
+Here 2 options are there
+
+- Home
+- My Account
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-2.png" alt="Sample Image"></div>
+
+---
+
+#### I use login credentials and then perform test with Burp Suite.
+ - Username : *wiener*
+ - Password - *peter*
+   
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-3.png" alt="Sample Image"></div>
+
+---
+#### Mail Server - For OTP
+
+- Open the Mail server
+- Got the OTP 
+   
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-4.png" alt="Sample Image"></div>
+
+---
+#### Check request in Burp
+After getting OTP, enter the original OTP and enter.
+
+- Check request in Burp
+- After Login , Read the parameter - **/my-account?=wiener HTTP/1.1**
+> - **Copy the parameter to use later.**
+   
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-5.png" alt="Sample Image"></div>
+
+---
+#### Login Page
+ I use login victim credentials and then perform test with Burp Suite.
+ - Username : *carlos*
+ - Password - *montoya*
+> - Enter credential & Enter
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-6.png" alt="Sample Image"></div>
+
+---
+#### Enter Wrong OTP
+-Before clicking Ok 
+- On the intercept of Burp
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-7.png" alt="Sample Image"></div>
+
+---
+#### Request captured in Burp Suite
+
+- Find OTP request and *change the parameter*
+- *GET Normal paramater*
+- Change to the Parameter you copied before
+> - **GET /my-account?=carlos HTTP/1.1**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-8.png" alt="Sample Image"></div>
+
+---
