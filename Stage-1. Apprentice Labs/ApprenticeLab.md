@@ -2,7 +2,7 @@
 
 > - [Lab-1 { Username enumeration via different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/ApprenticeLab.md#lab--1---apprentice-)
 
-> - [Lab-6 { 2FA simple bypass }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/ApprenticeLab.md#lab--6---apprentice-)
+> - [Lab-6 { 2FA Simple Bypass }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/ApprenticeLab.md#lab--6---apprentice-)
 
 ---
 
@@ -17,31 +17,31 @@
 > - [ Portswigger Lab { Username enumeration via different responses }](https://portswigger.net/web-security/authentication/password-based/lab-username-enumeration-via-different-responses)
 
 ---
-#### This lab is vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password.
+### This lab is vulnerable to username enumeration and password brute-force attacks. It has an account with a predictable username and password.
 
 <div style="text-align: center;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-1.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
-#### This is our Interface of our Web-Lab where we have to test.
+### This is our Interface of our Web-Lab where we have to test.
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-2.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
-#### I use dummy credentials and then perform username enumeration with Burp Suite.
+### I use dummy credentials and then perform username enumeration with Burp Suite.
  - Username : 1234
  - Password - 1234
    
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-3.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
-#### Username Enumeration
+### Username Enumeration
    * First enter dummy crediential and capture request in burp, 
    * Then find the original request and send to intruder.
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-4.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
-#### In Intruder , Add payload to username then go to paylaod section , add username list given in the Lab.
+### In Intruder , Add payload to username then go to paylaod section , add username list given in the Lab.
 - Add Payload - &1234& (Username)
 - Add username list in Payload section
 > - You can copy username List from given link below.
@@ -50,14 +50,14 @@
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-5.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
-#### After Attack, we got a credential.
+### After Attack, we got a credential.
 - You can find the username by Length or status (Correct username has diffrent status code).
 - username : pi
   
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L1-6.png" alt="Sample Image" width="700" height="600"></div>
 
 ---
-#### Password Attack - Do Same process as username enumeration brute force
+### Password Attack - Do Same process as username enumeration brute force
 - Now enter original username and wrong password
 - Capture request in Burp
 - Original request Send to Intruder
@@ -84,14 +84,14 @@
 ---
 
 # Lab : 6 : { Apprentice }
-# 2FA simple bypass
+# 2FA Simple Bypass
 * This lab's two-factor authentication can be bypassed.
 * You have already obtained a *valid username and password*, but do not have access to the user's 2FA verification code.
   
 > - [ Portswigger Lab { 2FA simple bypass }](https://portswigger.net/web-security/authentication/multi-factor/lab-2fa-simple-bypass)
 
 ---
-#### To solve the lab, access Carlos's account page.
+### To solve the lab, access Carlos's account page.
 
 - Your credentials - **wiener : peter**
 - Victim's credentials - *carlos : montoya*
@@ -99,7 +99,7 @@
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/Lab-6.png" alt="Sample Image"></div>
 
 ---
-#### This is our Interface of our Web-Lab where we have to test.
+### This is our Interface of our Web-Lab where we have to test.
 Here 2 options are there
 
 - Home
@@ -109,14 +109,14 @@ Here 2 options are there
 
 ---
 
-#### I use login credentials and then perform test with Burp Suite.
+### I use login credentials and then perform test with Burp Suite.
  - Username : *wiener*
  - Password - *peter*
    
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-3.png" alt="Sample Image"></div>
 
 ---
-#### Mail Server - For OTP
+### Mail Server - For OTP
 
 - Open the Mail server
 - Got the OTP 
@@ -124,7 +124,7 @@ Here 2 options are there
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-4.png" alt="Sample Image"></div>
 
 ---
-#### Check request in Burp
+### Check request in Burp
 After getting OTP, enter the original OTP and enter.
 
 - Check request in Burp
@@ -134,7 +134,7 @@ After getting OTP, enter the original OTP and enter.
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-5.png" alt="Sample Image"></div>
 
 ---
-#### Login Page
+### Login Page
  I use login victim credentials and then perform test with Burp Suite.
  - Username : *carlos*
  - Password - *montoya*
@@ -143,14 +143,14 @@ After getting OTP, enter the original OTP and enter.
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-6.png" alt="Sample Image"></div>
 
 ---
-#### Enter Wrong OTP
+### Enter Wrong OTP
 -Before clicking Ok 
 - On the intercept of Burp
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-7.png" alt="Sample Image"></div>
 
 ---
-#### Request captured in Burp Suite
+### Request captured in Burp Suite
 
 - Find OTP request and *change the parameter*
 - *GET Normal paramater*
@@ -159,4 +159,14 @@ After getting OTP, enter the original OTP and enter.
 
 <div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-8.png" alt="Sample Image"></div>
 
+---
+### Lab Solved
+After request forwarding  , I got logged in **Successfully in Carlos Account.**
+
+<div style="text-align: right;"><img src="https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Images/1.%20Authentication/L6-9.png" alt="Sample Image"></div>
+
+> - We Got a message after Solving the Lab
+- **Congratulations, You solved the Lab.**
+
+---
 ---
