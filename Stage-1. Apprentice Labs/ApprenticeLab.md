@@ -1,6 +1,8 @@
 <h2 align="center">👨🏻‍💻Authentication vulnerabilities - Listing of Labs🆔</h2>
 
-> - [Lab-1 { Username enumeration via different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/tree/main/Stage-1.%20Apprentice%20Labs#lab-1-username-enumeration-via-different-responses)
+> - [Lab-1 { Username enumeration via different responses }](https://github.com/Nikunj-Sahani/BSCP..-..BurpSuite-Certified-Practitioner/blob/main/Stage-1.%20Apprentice%20Labs/ApprenticeLab.md#username-enumeration-via-different-responses)
+
+
 
 ---
 
